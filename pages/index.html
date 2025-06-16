@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinupX - Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+
+</head>
+
+<body class="bg-light">
+  <div class="d-flex min-vh-100">
+
+    <aside class="bg-finupx text-white p-4" style="width: 250px;">
+      <img src="../assets/imagem.png" alt=" Logo" class="logo mb-" />
+      <nav class="nav flex-column mt-4">
+        <a href="#" class="nav-link text-white active">Dashboard</a>
+        <a href="./metas.html" class="nav-link text-white">Metas</a>
+        <a href="#" class="nav-link text-white">Relatórios</a>
+        <a href="#" class="nav-link text-white">Configurações</a>
+      </nav>
+      
+    </aside>
+
+    <main class="flex-fill p-4">
+      <header class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Olá, Natalia 👋</h2>
+        <div>
+          <button class="btn me-2 bg-finupx" type="button">🔔</button>
+          <button class="btn me-2 bg-finupx" type="button">🔍</button>
+        </div>
+      </header>
+
+
+      <section class="row mb-4">
+        <div class="col-6 col-md-3 mb-3">
+          <a href="#" class="card receita p-3 shadow-sm w-100 text-start text-decoration-none">
+            <h5>Receitas</h5>
+            <p class="fs-4">R$ 5.000,00</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <a href="#" class="card despesas p-3 shadow-sm w-100 text-start text-decoration-none">
+            <h5>Despesas</h5>
+            <p class="fs-4">R$ 1.580,00</p>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3">
+          <a href="#" class="card meta p-3 shadow-sm w-100 text-start text-decoration-none">
+            <h5>Meta Mensal</h5>
+            <p class="fs-4">R$ 2.000</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <a href="#" class="card saldo p-3 shadow-sm bg-finupx w-100 text-start text-decoration-none">
+            <h5>Saldo</h5>
+            <p class="fs-4">R$ 3.420,00</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="card p-4 shadow-sm mb-4">
+        <h5>Gastos por Categoria</h5>
+        <div class="chart">Nenhum gasto por categoria ainda.
+          Adicione despesas para visualizar o gráfico.</div>
+      </section>
+
+      <section class="card p-4 shadow-sm mb-4">
+        <h5>Progresso da Meta: Viagem ao Paris</h5>
+        <div class="progress mb-2" style="height: 25px;">
+          <div class="progress-bar" style="width: 90%;">90%</div>
+
+        </div>
+        <p class="text-sm text-gray-600">R$ 5.000 / 8.000</p>
+        <a href="#" class="btn btn-outline-success btn-sm mt-2">+ Adicionar nova meta</a>
+      </section>
+
+
+      <section class="card p-4 shadow-sm mb-4">
+        <h5>Últimas Transações</h5>
+        <table class="table table-sm">
+          <thead>
+            <tr class="text-muted">
+              <th>Data</th>
+              <th>Categoria</th>
+              <th>Descrição</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10/06/2025</td>
+              <td>Alimentação</td>
+              <td>Restaurante</td>
+              <td class="text-danger">-R$ 75,00</td>
+            </tr>
+            <tr>
+              <td>09/06/2025</td>
+              <td>Salário</td>
+              <td>Empresa X</td>
+              <td class="text-success">+R$ 5.000,00</td>
+            </tr>
+            <tr>
+              <td>08/06/2025</td>
+              <td>Transporte</td>
+              <td>Uber</td>
+              <td class="text-danger">-R$ 28,00</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#" class="btn btn-outline-custom btn-sm">Ver todas</a>
+      </section>
+
+
+
+    </main>
+  </div>
+
+   <footer class="bg-finupx text-white text-start p-1 small">© 2025 FinupX - Todos os direitos reservados</footer>
+</body>
+
+</html>
